@@ -1,19 +1,12 @@
-package com.example.heroapi.model;
+package com.example.heroapi.dto;
 
-import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Hero {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+public class HeroDTO {
     private String name;
     private String universe;
 
